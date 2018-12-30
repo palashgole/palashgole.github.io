@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="Demo">
+    <head>
+        <title>HomeService</title>
+        <link rel="icon" href="title.png" type="image/gif" sizes="16x16">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="angular.js"></script>
+        <script src="angular-route.min.js"></script>
+        <link rel="stylesheet" href="newcss.css">
+        <script src="newjavascript.js"></script>
+    </head>
+    <body>
+        <div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imgavatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Username" id="widfor" name="uname" required>
+
+      <input type="password" placeholder="Password" id="widfor" name="psw" required>
+        
+      <button type="submit" id="log">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <a href="#" style="padding-left: 230px">Forgot Password?</a>
+    </div>
+      <div class="container-fluid">
+          <button id="fcon"<i class="fa fa-facebook"></i><p>Continue with Facebook</p></button>
+          <button id="gcon"<i class="fa fa-google-plus"></i><p>Continue with Google</p></button>
+      </div>
+      <div class="container-fluid" id="sign">
+          Don't have an account?<a href="#" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</a>
+      </div>
+  </form>
+</div>
+        <div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="imgavatar2.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <input type="text" placeholder="First name" id="widfor" name="uname" required>
+      <input type="text" placeholder="Last name" id="widfor" name="uname" required>
+      
+      <input type="email" placeholder="Email" id="widfor" name="psw" required>
+      <input type="text" placeholder="Mobile No." id="widfor" name="psw" required>
+      <input type="password" placeholder="Password" name="psw" id="widfor" required>
+      <input type="password" placeholder="Confirm Password" id="widfor" name="psw" required>
+      <button type="submit" id="log">Signup</button>
+    </div>
+  </form>
+</div>
+        <nav style="font-size: 20px;height: 55px;background-color: #e9eae2;" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div id="mynavbar" class="nav">   
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#/!" id="header" class="glyphicon glyphicon-home">HomeService</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#!professional" id="menu" class="glyphicon glyphicon-user">Become a Professional </a></li>
+                    <li><a href="#" id="menu" class="glyphicon glyphicon-log-in" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login/Signup</a></li>
+                </ul>
+                </div>
+              </div>     
+        </nav>
+        <div class="container-fluid" style="margin-top: 55px">
+                    <div ng-view></div>  
+        </div>
+        <br><br>
+        <div class="container-fluid" id="why">
+            <div><h1 style="color: black;margin-left: 485px"><b>WHY CHOOSE US</b></h1></div>
+            <marquee direction="right" scrolldelay=1 style="width: 400px;margin-left: 440px;"><hr id="line1"></marquee>
+            <br><br><br>
+            <div class="col-md-2"></div>
+            <div class="col-md-2" id="fonser" style="margin-left: -15px">
+                <img src="guarantee-warranty-nightguard-297x300.png" alt="Gurantee" class="ser">
+                <div style="margin-left: 15px">Customer Satisfaction</div>
+                <div style="margin-left: 52px"> Guarantee</div>
+            </div>
+            <div class="col-md-2" id="fonser" style="margin-left: 15px">
+                <img src="best_price.png" alt="Bestprice" class="ser">
+                <div style="margin-left: 32px">Provide service in</div>
+                <div style="margin-left: 60px">best price</div>
+            </div>
+            <div class="col-md-2" id="fonser" style="margin-left: 15px">
+                <img src="quality-stamp.png" alt="Quality" class="ser">
+                <div style="margin-left: 40px">Provide quality</div>
+                <div style="margin-left: 63px">service</div>
+            </div>
+            <div class="col-md-2" id="fonser">
+                <img src="FEEDBACK.jpg" alt="Feedback" class="ser">
+                <div style="margin-left: 55px">Give your</div>
+                <div style="margin-left: 59px">feedback</div>
+            </div> 
+            <div class="col-md-2"></div>
+        </div>
+       <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-md-4" style="padding-left: 90px">
+                <h3 style="padding-top: 8px">&COPY; HomeService Pvt Ltd</h3>
+                <p style="padding-left: 8px">We are always provide best service</p>
+                <i class="fa fa-facebook-official" style="padding-left: 8px"></i>
+                <i class="fa fa-twitter" style="padding-left: 5px"></i>
+                <i class="fa fa-instagram" style="padding-left: 5px"></i>
+                <i class="fa fa-google-plus" style="padding-left: 5px"></i>
+                </div>
+                <div class="col-md-3" style="padding-left: 50px">
+                    <ul>
+                        <li style="padding-top: 20px"><h4>COMPANY</h4></li>
+                        <li style="padding-top: 12px"><a href="#">About Us</a></li>
+                        <li style="padding-top: 12px"><a href="#">Contact Us</a></li>
+                        <li style="padding-top: 12px"><a href="#">FAQS</a></li>
+                        <li style="padding-top: 12px"><a href="#">Terms and Conditions</a></li>
+                        <li style="padding-top: 12px"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2" style="padding-right: 20px">
+                    <ul>
+                        <li style="padding-top: 20px"><h4>CITIES</h4></li>
+                        <li style="padding-top: 12px"><a href="#">Mumbai</a></li>
+                        <li style="padding-top: 12px"><a href="#">Delhi</a></li>
+                        <li style="padding-top: 12px"><a href="#">Banglore</a></li>
+                        <li style="padding-top: 12px"><a href="#">Bhopal</a></li>
+                        <li style="padding-top: 12px"><a href="#">Gwalior</a></li>
+                        <li style="padding-top: 12px"><a href="#">Noida</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3" style="padding-right: 40px">
+                   <ul>
+                        <li  style="padding-top: 20px"><h4>Connect With Us</h4></li>
+                        <li style="padding-top: 12px"><a href="#">Login</a></li>
+                        <li style="padding-top: 12px"><a href="#">Signin</a></li>
+                   </ul>    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
